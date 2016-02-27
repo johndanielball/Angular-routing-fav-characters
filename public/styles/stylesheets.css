@@ -1,0 +1,15 @@
+body {
+	background: linear-gradient(to bottom right, floralwhite, #f7ecb5);
+}
+
+.container {
+	background-color: pink;
+}
+
+.navButton {
+	background: linear-gradient(to top right, paleturquoise, #f7ecb5);
+}
+
+html {
+	text-align: center;
+}

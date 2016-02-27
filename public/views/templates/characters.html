@@ -1,0 +1,17 @@
+<h3 ng-show="!showCharacters">Hit the <span style="color:#00b3ee">blue</span> button to view characters!</h3>
+<button style="background-color:#00b3ee; color:antiquewhite" ng-show="!showCharacters" ng-click="getCharacters()">Get Characters</button>
+
+<!--These elements have bindings that match the property of the scope object-->
+<div ng-show="showCharacters">
+  <img height="300px" ng-src="/content/images/{{image}}" alt="photo" />
+  <div><strong>Name: </strong>{{name}}</div>
+  <div><strong>Home: </strong>{{home}}</div>
+  <div><strong>Age: </strong>{{age}}</div>
+  <div><strong>Hobby: </strong>{{hobby}}</div>
+</div>
+
+<!--These buttons change position of the character in the data array. Then call the updateCharacter function-->
+<div>
+  <button class="navButton" ng-click="movePrevious()">&lt;</button>
+  <button class="navButton" ng-click="moveNext()">&gt;</button>
+</div>
